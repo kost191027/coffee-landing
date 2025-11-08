@@ -23,7 +23,6 @@
 
 ![Screenshot Light Theme](images/screenshot-light.png)
 
-*Для добавления скриншота светлой темы сохраните изображение в папку `images` под именем `screenshot-light.png`*
 
 ## ✨ Особенности
 
