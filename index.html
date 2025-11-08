@@ -11,13 +11,23 @@
     <header class="header">
 
         <div class="container">
+            <!-- Бургер-меню ТОЛЬКО для мобильных -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+
             <a href="#top" class="logo text-gradient header__logo">StarBucks</a>
 
-            <nav class="header__nav">
+            <nav class="header__nav" id="headerNav">
                 <a href="#products" class="header__link">Select</a>
                 <a href="#events" class="header__link">Events</a>
                 <a href="#contacts" class="header__link">Contacts</a>
             </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+            <span class="theme-toggle__icon">🌙</span>
+            </button>
         </div>
     </header>
      
@@ -290,12 +300,6 @@
     </footer>
 
 <!--скрипты-->
-<script>
-// фикс шапки сайта
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header');
-    header.classList.toggle('scrolled', window.scrollY > 50);
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>
